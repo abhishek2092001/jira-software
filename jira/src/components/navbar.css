@@ -21,7 +21,7 @@ ul li{
     box-sizing: border-box;
     margin: 8px;
 }
-a{
+.a1{
     text-decoration: none;
     font-size: small;
     font-weight: 500;
@@ -30,7 +30,7 @@ a{
     box-sizing: border-box;
 
 }
-a:hover{
+.a1:hover{
     color: rgb(75, 75, 240);
     cursor: pointer;
     background-color:rgb(191, 191, 227);
@@ -42,18 +42,14 @@ height: 30px;
 border: none;
 border-radius: 3px;
 background-color: blue;
-color: white;
+
 }
 .logo1{
     box-sizing: border-box;
 }
 .logo1:hover{
     
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 1px;
-    padding-bottom: 0px;
-border-radius: 50%;
+border-radius: 40%;
 }
 .button-create:hover{
     cursor: pointer;
@@ -68,4 +64,168 @@ border-radius: 50%;
 
 .menu2{
     transform: scale(2);
+}
+.resp{
+    display: none;
+}
+.container{
+    position: absolute;
+    left: 43rem;
+    border:none;
+    width: 27rem;
+    height: 25rem;
+    padding: 20px;
+    box-shadow:1px 0px 4px 1px rgb(192, 190, 190) ;
+    padding-top: 15px;
+    background-color: white;
+
+}
+
+.cont-1{
+    font-weight: 900;
+    font-size: 11px;
+    color: rgb(155, 151, 151);
+    margin-bottom: 8px;
+}
+.cont-2{
+     font-size: 11px;
+     color: rgb(147, 143, 143);
+     margin-bottom: 8px;
+}
+.a2{
+    font-size: 16px;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    
+}
+.Slack{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 3rem;
+    text-align: center;
+}
+.Slack:hover{
+    background-color: rgb(211, 211, 211) ;
+}
+    
+.Powerbi{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 3rem;
+    text-align: center;
+}
+.Powerbi:hover{
+    background-color: rgb(211, 211, 211) ;
+}
+.easyagile{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 3rem;
+    text-align: center;
+}
+.easyagile:hover{
+    background-color: rgb(211, 211, 211) ;
+}
+.explore{
+    height: 3rem;
+    position: absolute;
+    bottom: 1rem;
+    width: 88%;
+    
+}
+.explore:hover{
+    background-color: rgb(211, 211, 211) ;
+}
+@media (max-width:1000px)
+{
+    .resp{
+        display: flex;
+        text-decoration: none;
+    font-size: small;
+    font-weight: 500;
+    color: rgb(74, 73, 73);
+    padding: 6px;
+    box-sizing: border-box;
+    align-items: center;
+    }
+    .resp:hover{
+        color: rgb(75, 75, 240);
+    cursor: pointer;
+    background-color:rgb(191, 191, 227);
+  border-radius: 3px;
+    }
+    .cont{
+        position: absolute;
+        top: 5rem;
+        left: 12rem;
+        width: 80px;
+        display: block;
+        border: none;
+        padding: 5px;
+        
+       box-shadow: 1px 1px 3px 1px grey;
+    }
+    .cont li :hover{
+        background-color: rgb(242, 236, 236);
+        color: rgb(74, 73, 73);
+    }
+    .container{
+        position: absolute;
+        left: 6rem;
+        top: 13rem;
+    }
+}
+
+.image1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 89vh;
+    
+}
+.filter{
+    padding:5rem;
+}
+.image2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 60vh;
+}
+h1{
+    font-size: 30px;
+}
+.createdash{
+    position: absolute;
+    left: 34rem;
+    top: 5.1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 0px 4px 1px rgb(192, 190, 190); 
+    
+    height: 8rem;
+    width: 25rem;
+}
+.button1{
+    display: flex;
+    height: 45%;
+    width: 98%;
+    align-items: center;
+        justify-content: center;
+    
+}
+.a3{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: grey;
+}
+.button1:hover{
+    background-color: rgb(209, 206, 206);
+}
+.abutton{
+    text-decoration: none;
+    color: white;
 }

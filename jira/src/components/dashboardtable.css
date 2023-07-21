@@ -1,0 +1,17 @@
+.heading{
+    padding-left: 200px;
+    padding-top: 40px;
+
+    font-size: 12px;
+    color: grey;
+    border-collapse: separate;
+    /* justify-content: space-evenly;
+    align-items: center; */
+}
+.hr{
+    margin: center;
+    width:1000px;
+}
+.table{
+    
+}

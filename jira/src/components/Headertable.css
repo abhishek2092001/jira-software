@@ -1,0 +1,67 @@
+.head{
+    padding-left: 20px;
+    font-weight: 500;
+    color: rgb(53, 52, 52);
+}
+.row{
+    display: flex;
+    justify-content: stretch;
+}
+.input-wrapper{
+    background-color: rgb(244, 244, 244);
+    border: 2px solid lightgray;
+    height: 3.5rem;
+    width: 13%;
+ border-radius: 5px;
+    
+    
+   padding: 0px 15px 0px 15px;
+   display: flex;
+   align-items: center;
+   margin-left: 19px;
+   
+}
+.input-wrapper:hover{
+    background-color:rgb(224, 221, 221) ;
+}
+
+.input-wrapper:focus-within{
+    background-color:white;
+    
+}
+input{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    
+    outline: none;
+    width:100%;
+    
+}
+#bar{
+    color: royalblue;
+}
+.dropdown{
+    background-color: rgb(244, 244, 244);
+    color: grey;
+    
+    height: 4rem;
+    width: 17%;
+ border-radius: 5px;
+padding: 10px;
+margin-left: 10px;
+
+display: flex;
+align-items: center;
+justify-content: space-around;
+border-color: transparent;
+
+}
+.dropdown:hover{
+    background-color:rgb(224, 221, 221) ;
+    cursor: pointer;
+}
+.dropdown:active{
+    border-color: transparent;
+}
+
