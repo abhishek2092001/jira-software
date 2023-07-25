@@ -137,45 +137,6 @@ border-radius: 40%;
 .explore:hover{
     background-color: rgb(211, 211, 211) ;
 }
-@media (max-width:1000px)
-{
-    .resp{
-        display: flex;
-        text-decoration: none;
-    font-size: small;
-    font-weight: 500;
-    color: rgb(74, 73, 73);
-    padding: 6px;
-    box-sizing: border-box;
-    align-items: center;
-    }
-    .resp:hover{
-        color: rgb(75, 75, 240);
-    cursor: pointer;
-    background-color:rgb(191, 191, 227);
-  border-radius: 3px;
-    }
-    .cont{
-        position: absolute;
-        top: 5rem;
-        left: 12rem;
-        width: 80px;
-        display: block;
-        border: none;
-        padding: 5px;
-        
-       box-shadow: 1px 1px 3px 1px grey;
-    }
-    .cont li :hover{
-        background-color: rgb(242, 236, 236);
-        color: rgb(74, 73, 73);
-    }
-    .container{
-        position: absolute;
-        left: 6rem;
-        top: 13rem;
-    }
-}
 
 .image1{
     display: flex;
@@ -213,7 +174,7 @@ h1{
     height: 45%;
     width: 98%;
     align-items: center;
-        justify-content: center;
+    justify-content: center;
     
 }
 .a3{
@@ -229,3 +190,56 @@ h1{
     text-decoration: none;
     color: white;
 }
+    @media (max-width:1000px)
+    {
+        .resp{
+            display: flex;
+            text-decoration: none;
+        font-size: small;
+        font-weight: 500;
+        color: rgb(74, 73, 73);
+        
+        padding: 2px;
+        box-sizing: border-box;
+        align-items: center;
+        }.resp1{
+            padding: 1px;
+            width: 10rem;
+            height: 3rem;
+        }
+        .resp1:hover{
+            color: rgb(107, 106, 106);
+            background-color: rgb(207, 205, 205);
+        }
+        .resp:hover{
+            /* color: rgb(75, 75, 240); */
+        cursor: pointer;
+        background-color:rgb(191, 191, 227);
+      border-radius: 3px;
+        }
+        .cont{
+            position: absolute;
+            top: 5rem;
+            left: 12rem;
+            width: 14rem;
+            display: block;
+            border: none;
+            padding: 5px;
+            
+           box-shadow: 1px 1px 3px 1px grey;
+        }
+        .cont li :hover{
+            background-color: rgb(242, 236, 236);
+            color: rgb(74, 73, 73);
+        }
+        .container{
+            position: absolute;
+            left: 6rem;
+            top: 17rem;
+        }
+        .createdash{
+            position: absolute;
+            left: 9rem;
+            top: 12rem;
+        }
+    }
