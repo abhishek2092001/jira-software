@@ -2,7 +2,7 @@ import React, { useState , useEffect} from 'react';
 import  './dashboard1.css';
 const IssueForm = () =>{
 
-  const [proj,setProj]=useState("");
+  const [proj,setProj]=useState("hello");
   const [issue,setIssue]=useState("");
 
   function saveData()
@@ -37,9 +37,9 @@ const IssueForm = () =>{
       <form>
         <div className="form-group">
           <label htmlFor="project"> Project<sup class="star">*</sup></label>
-          <select id="project" required>
-            {/* <select>Select a project</select> */}
-            <option  name=" proj" value= {proj} onChange={(e)=>{setProj(e.target.value)}}>Select a project</option>
+          <select id="project" name="project" placeholder='Select a project' required>
+            <option  name=" project" value= {proj} onChange={(e)=>{setProj(e.target.value)}}>Select a project</option>
+            <select>Select a project</select>
             {/* Project options */}
           </select>
         </div>

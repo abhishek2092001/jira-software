@@ -1,16 +1,22 @@
 .heading{
-    padding-left: 200px;
+    padding-left: 190px;
     padding-top: 40px;
-
-    font-size: 12px;
+    
+    font-size: 20px;
     color: grey;
     border-collapse: separate;
     /* justify-content: space-evenly;
     align-items: center; */
 }
 .hr{
+    
     margin: center;
     width:1000px;
+}
+.body{
+    padding-left: 200px;
+    font-size: 12px;
+    color:blue;
 }
 .table{
     
