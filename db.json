@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "proj": "project1",
+      "issue": "issue1"
+    },
+    {
+      "id": 2,
+      "proj": "project2",
+      "issue": "issue2"
+    },
+    {
+      "id": 3,
+      "proj": "project3",
+      "issue": "issue3"
+    },
+    {
+      "id": 4,
+      "proj": "project4",
+      "issue": "issue4"
+    },
+    {
+      "id": 5,
+      "proj": "project5",
+      "issue": "issue5"
+    }
+  ]
+}

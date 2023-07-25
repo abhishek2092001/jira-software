@@ -1,6 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import  './dashboard1.css';
 const IssueForm = () =>{
+
+  const [proj,setProj]=useState("");
+  const [issue,setIssue]=useState("");
+
+  function saveData()
+  {
+    let data={proj,issue}
+  // console.warn(data);
+    fetch("http://localhost:3031/users", {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body:JSON.stringify(data)
+    }).then((resp)=>{
+      // console.warn("resp",resp);;
+      resp.json().then((result)=>{
+        console.warn("result",result)
+      })
+    })
+  }
+
+
+
+
   return (
     <div className="issue-form">
       <h2>Create Issue</h2>
@@ -12,14 +38,15 @@ const IssueForm = () =>{
         <div className="form-group">
           <label htmlFor="project"> Project<sup class="star">*</sup></label>
           <select id="project" required>
-            <option value="">Select a project</option>
+            {/* <select>Select a project</select> */}
+            <option  name=" proj" value= {proj} onChange={(e)=>{setProj(e.target.value)}}>Select a project</option>
             {/* Project options */}
           </select>
         </div>
         <div className="form-group">
           <label htmlFor="issueType"> Issue Type<sup class="star">*</sup></label>
           <select id="issueType" required>
-            <option value="">Select an issue type</option>
+            <option value= {issue} onChange={(e)=>{setIssue(e.target.value)}}>Select an issue type</option>
             {/* Issue type options */}
           </select>
         </div>
@@ -30,7 +57,7 @@ const IssueForm = () =>{
           </label>
         </div>
         <div className="button-group">
-          <button type="submit" className="create-button">
+          <button type="submit" className="create-button"  onClick={saveData} >
             Create
           </button>
           <button type="button" className="cancel-button">
