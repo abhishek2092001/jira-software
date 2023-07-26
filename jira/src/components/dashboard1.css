@@ -28,7 +28,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     position: relative;
     top: 2rem;
-    z-index: -1;
+    /* z-index: -1; */
     color: #a2a1a1;
     background-color: white;
     box-shadow: 1px 0px 4px 1px rgb(192, 190, 190); 

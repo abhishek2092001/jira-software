@@ -2,14 +2,23 @@ import React, { useState , useEffect} from 'react';
 import  './dashboard1.css';
 const IssueForm = () =>{
 
-  const [proj,setProj]=useState("hello");
+  const [proj,setProj]=useState([]);
   const [issue,setIssue]=useState("");
+  const [info,setInfo]=useState([])
+  useEffect(()=>{
+    fetch("http://localhost:3050/users").then((result)=>{
+      result.json().then((resp)=>{
+        // console.warn(resp)
+        setInfo(resp)
+      })
+    })
+  },[])
 
   function saveData()
   {
     let data={proj,issue}
   // console.warn(data);
-    fetch("http://localhost:3031/users", {
+    fetch("http://localhost:3050/users", {
       method: "POST",
       headers: {
         'Accept': 'application/json',
@@ -39,7 +48,12 @@ const IssueForm = () =>{
           <label htmlFor="project"> Project<sup class="star">*</sup></label>
           <select id="project" name="project" placeholder='Select a project' required>
             <option  name=" project" value= {proj} onChange={(e)=>{setProj(e.target.value)}}>Select a project</option>
-            <select>Select a project</select>
+            {
+            info.map(( itim , j) => 
+              <option value={itim.proj} key={j} >{itim.proj}</option>
+    
+              )
+              }
             {/* Project options */}
           </select>
         </div>
@@ -47,6 +61,12 @@ const IssueForm = () =>{
           <label htmlFor="issueType"> Issue Type<sup class="star">*</sup></label>
           <select id="issueType" required>
             <option value= {issue} onChange={(e)=>{setIssue(e.target.value)}}>Select an issue type</option>
+            {
+            info.map(( itim , j) => 
+              <option value={itim.issue} key={j} >{itim.issue}</option>
+    
+              )
+              }
             {/* Issue type options */}
           </select>
         </div>

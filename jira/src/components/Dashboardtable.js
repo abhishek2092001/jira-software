@@ -3,14 +3,14 @@ import './dashboardtable.css'
 const Dashboardtable = () => {
   const [data,setData]=useState([])
   useEffect(()=>{
-    fetch("http://localhost:3000/data").then((result)=>{
+    fetch("http://localhost:3050/data").then((result)=>{
       result.json().then((resp)=>{
         // console.warn(resp)
         setData(resp)
       })
     })
   },[])
-  console.warn(data)
+  //console.warn(data)
   return (
     <table className="Table">
       <thead>
