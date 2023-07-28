@@ -146,6 +146,10 @@ border-radius: 40%;
     height: 89vh;
     
 }
+.jira{
+    height:35px;
+    width: 30px;
+}
 .filter{
     padding:5rem;
 }
@@ -243,4 +247,5 @@ h1{
             left: 9rem;
             top: 12rem;
         }
+        
     }

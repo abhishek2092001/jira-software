@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className='nav'>
         <ul className='part1'>
           <li  className='  menu2'><a className='logo1 a1' href="#"><HiSquares2X2/></a></li > 
-          <li  className='menu1'><a className="a1" href="#">logo2</a></li > 
+          <li  className='menu1'><a className="a1" href="#"><img  className="jira"src= "https://www.automation-consultants.com/wp-content/uploads/2018/04/Jira-Software@2x-blue.png"></img></a></li > 
           <li className='resp' onClick={()=>setopenprofile((prev)=>!prev)}>menu<FiChevronDown/></li>
           <li>
           {

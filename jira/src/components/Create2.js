@@ -6,7 +6,7 @@ const IssueForm = () =>{
   const [issue,setIssue]=useState("");
   const [info,setInfo]=useState([])
   useEffect(()=>{
-    fetch("http://localhost:3050/users").then((result)=>{
+    fetch("http://localhost:3000/users").then((result)=>{
       result.json().then((resp)=>{
         // console.warn(resp)
         setInfo(resp)
@@ -18,7 +18,7 @@ const IssueForm = () =>{
   {
     let data={proj,issue}
   // console.warn(data);
-    fetch("http://localhost:3050/users", {
+    fetch("http://localhost:3000/users", {
       method: "POST",
       headers: {
         'Accept': 'application/json',
