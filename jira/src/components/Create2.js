@@ -2,23 +2,23 @@ import React, { useState , useEffect} from 'react';
 import  './dashboard1.css';
 const IssueForm = () =>{
 
-  const [proj,setProj]=useState([]);
-  const [issue,setIssue]=useState("");
+  const [Project,setProj]=useState([]);
+  const [Issue_type,setIssue]=useState("");
   const [info,setInfo]=useState([])
   useEffect(()=>{
-    fetch("http://localhost:3050/users").then((result)=>{
-      result.json().then((resp)=>{
+    fetch("http://localhost:8000/Pr_Schema").then((result)=>{
+      return result.json()}).then((resp)=>{
         // console.warn(resp)
-        setInfo(resp)
+        setInfo(resp);
       })
-    })
+    
   },[])
 
   function saveData()
   {
-    let data={proj,issue}
+    let data={Project,Issue_type}
   // console.warn(data);
-    fetch("http://localhost:3050/users", {
+    fetch("http://localhost:8000/Pr_Schema", {
       method: "POST",
       headers: {
         'Accept': 'application/json',
@@ -46,11 +46,11 @@ const IssueForm = () =>{
       <form>
         <div className="form-group">
           <label htmlFor="project"> Project<sup class="star">*</sup></label>
-          <select id="project" name="project" placeholder='Select a project' required>
-            <option  name=" project" value= {proj} onChange={(e)=>{setProj(e.target.value)}}>Select a project</option>
+          <select id="project" name="project" onChange={(e)=>{setProj(e.target.value)}} placeholder='Select a project' required>
+            <option  name=" project" value= {Project} >Select a project</option>
             {
             info.map(( itim , j) => 
-              <option value={itim.proj} key={j} >{itim.proj}</option>
+              <option value={itim.Project} key={j} >{itim.Project}</option>
     
               )
               }
@@ -59,11 +59,11 @@ const IssueForm = () =>{
         </div>
         <div className="form-group">
           <label htmlFor="issueType"> Issue Type<sup class="star">*</sup></label>
-          <select id="issueType" required>
-            <option value= {issue} onChange={(e)=>{setIssue(e.target.value)}}>Select an issue type</option>
+          <select id="issueType" onChange={(e)=>{setIssue(e.target.value)}} required>
+            <option value= {Issue_type} >Select an issue type</option>
             {
             info.map(( itim , j) => 
-              <option value={itim.issue} key={j} >{itim.issue}</option>
+              <option value={itim.Issue_type} key={j} >{itim.Issue_type}</option>
     
               )
               }

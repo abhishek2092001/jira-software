@@ -1,27 +1,35 @@
-html{
+html {
     font-size: 62.5%;
 }
-.nav{
+
+.nav {
     width: 100%;
     height: 5rem;
- display:flex ;
- justify-content: space-between; 
- border: none;
- box-shadow: 1px 0px 4px 1px rgb(192, 190, 190); 
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    box-shadow: 1px 0px 4px 1px rgb(192, 190, 190);
 
- align-items: center;
+    align-items: center;
 }
-.part1{
+.jira {
+    height: 35px ;
+    Width: 30px;
+    }
+
+.part1 {
     display: flex;
     align-items: center;
- 
+
 }
-ul li{
+
+ul li {
     display: inline-block;
     box-sizing: border-box;
     margin: 8px;
 }
-.a1{
+
+.a1 {
     text-decoration: none;
     font-size: small;
     font-weight: 500;
@@ -30,217 +38,250 @@ ul li{
     box-sizing: border-box;
 
 }
-.a1:hover{
+
+.a1:hover {
     color: rgb(75, 75, 240);
     cursor: pointer;
-    background-color:rgb(191, 191, 227);
-  border-radius: 3px;
+    background-color: rgb(191, 191, 227);
+    border-radius: 3px;
 }
-.button-create{
-width:60px;
-height: 30px;
-border: none;
-border-radius: 3px;
-background-color: blue;
+
+.button-create {
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: blue;
 
 }
-.logo1{
+
+.logo1 {
     box-sizing: border-box;
 }
-.logo1:hover{
-    
-border-radius: 40%;
+
+.logo1:hover {
+
+    border-radius: 40%;
 }
-.button-create:hover{
+
+.button-create:hover {
     cursor: pointer;
     background-color: rgb(59, 59, 242);
 }
-.search{
+
+.search {
     height: 25px;
     width: 180px;
     border-radius: 3px;
     border: 2px solid rgb(203, 201, 201);
 }
 
-.menu2{
+.menu2 {
     transform: scale(2);
 }
-.resp{
+
+.resp {
     display: none;
 }
-.container{
+
+.container {
     position: absolute;
     left: 43rem;
-    border:none;
+    border: none;
     width: 27rem;
     height: 25rem;
     padding: 20px;
-    box-shadow:1px 0px 4px 1px rgb(192, 190, 190) ;
+    box-shadow: 1px 0px 4px 1px rgb(192, 190, 190);
     padding-top: 15px;
     background-color: white;
 
 }
 
-.cont-1{
+.cont-1 {
     font-weight: 900;
     font-size: 11px;
     color: rgb(155, 151, 151);
     margin-bottom: 8px;
 }
-.cont-2{
-     font-size: 11px;
-     color: rgb(147, 143, 143);
-     margin-bottom: 8px;
+
+.cont-2 {
+    font-size: 11px;
+    color: rgb(147, 143, 143);
+    margin-bottom: 8px;
 }
-.a2{
+
+.a2 {
     font-size: 16px;
     margin: auto;
     text-decoration: none;
     color: black;
-    
+
 }
-.Slack{
+
+.Slack {
     margin-top: 15px;
     margin-bottom: 5px;
     height: 3rem;
     text-align: center;
 }
-.Slack:hover{
-    background-color: rgb(211, 211, 211) ;
+
+.Slack:hover {
+    background-color: rgb(211, 211, 211);
 }
-    
-.Powerbi{
+
+.Powerbi {
     margin-top: 15px;
     margin-bottom: 5px;
     height: 3rem;
     text-align: center;
 }
-.Powerbi:hover{
-    background-color: rgb(211, 211, 211) ;
+
+.Powerbi:hover {
+    background-color: rgb(211, 211, 211);
 }
-.easyagile{
+
+.easyagile {
     margin-top: 15px;
     margin-bottom: 5px;
     height: 3rem;
     text-align: center;
 }
-.easyagile:hover{
-    background-color: rgb(211, 211, 211) ;
+
+.easyagile:hover {
+    background-color: rgb(211, 211, 211);
 }
-.explore{
+
+.explore {
     height: 3rem;
     position: absolute;
     bottom: 1rem;
     width: 88%;
-    
-}
-.explore:hover{
-    background-color: rgb(211, 211, 211) ;
+
 }
 
-.image1{
+.explore:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+.image1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     height: 89vh;
-    
+
 }
-.filter{
-    padding:5rem;
+
+.filter {
+    padding: 5rem;
 }
-.image2{
+
+.image2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     height: 60vh;
 }
-h1{
+
+h1 {
     font-size: 30px;
 }
-.createdash{
+
+.createdash {
     position: absolute;
     left: 34rem;
     top: 5.1rem;
     background-color: rgb(255, 255, 255);
-    box-shadow: 1px 0px 4px 1px rgb(192, 190, 190); 
-    
+    box-shadow: 1px 0px 4px 1px rgb(192, 190, 190);
+
     height: 8rem;
     width: 25rem;
 }
-.button1{
+
+.button1 {
     display: flex;
     height: 45%;
     width: 98%;
     align-items: center;
     justify-content: center;
-    
+
 }
-.a3{
+
+.a3 {
     text-decoration: none;
     font-size: 12px;
     font-weight: 500;
     color: grey;
 }
-.button1:hover{
+
+.button1:hover {
     background-color: rgb(209, 206, 206);
 }
-.abutton{
+
+.abutton {
     text-decoration: none;
     color: white;
 }
-    @media (max-width:1000px)
-    {
-        .resp{
-            display: flex;
-            text-decoration: none;
+
+@media (max-width:1000px) {
+    .resp {
+        display: flex;
+        text-decoration: none;
         font-size: small;
         font-weight: 500;
         color: rgb(74, 73, 73);
-        
+
         padding: 2px;
         box-sizing: border-box;
         align-items: center;
-        }.resp1{
-            padding: 1px;
-            width: 10rem;
-            height: 3rem;
-        }
-        .resp1:hover{
-            color: rgb(107, 106, 106);
-            background-color: rgb(207, 205, 205);
-        }
-        .resp:hover{
-            /* color: rgb(75, 75, 240); */
-        cursor: pointer;
-        background-color:rgb(191, 191, 227);
-      border-radius: 3px;
-        }
-        .cont{
-            position: absolute;
-            top: 5rem;
-            left: 12rem;
-            width: 14rem;
-            display: block;
-            border: none;
-            padding: 5px;
-            
-           box-shadow: 1px 1px 3px 1px grey;
-        }
-        .cont li :hover{
-            background-color: rgb(242, 236, 236);
-            color: rgb(74, 73, 73);
-        }
-        .container{
-            position: absolute;
-            left: 6rem;
-            top: 17rem;
-            z-index: 1;
-        }
-        .createdash{
-            position: absolute;
-            left: 9rem;
-            top: 12rem;
-        }
     }
+
+    .resp1 {
+        padding: 1px;
+        width: 10rem;
+        height: 3rem;
+    }
+
+    .resp1:hover {
+        color: rgb(107, 106, 106);
+        background-color: rgb(207, 205, 205);
+    }
+
+    .resp:hover {
+        /* color: rgb(75, 75, 240); */
+        cursor: pointer;
+        background-color: rgb(191, 191, 227);
+        border-radius: 3px;
+    }
+
+    .cont {
+        position: absolute;
+        top: 5rem;
+        left: 12rem;
+        width: 14rem;
+        display: block;
+        border: none;
+        padding: 5px;
+
+        box-shadow: 1px 1px 3px 1px grey;
+    }
+
+    .cont li :hover {
+        background-color: rgb(242, 236, 236);
+        color: rgb(74, 73, 73);
+    }
+
+    .container {
+        position: absolute;
+        left: 6rem;
+        top: 17rem;
+        z-index: 1;
+    }
+
+    .createdash {
+        position: absolute;
+        left: 9rem;
+        top: 12rem;
+    }
+}
