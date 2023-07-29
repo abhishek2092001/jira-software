@@ -94,6 +94,7 @@ ul li {
     box-shadow: 1px 0px 4px 1px rgb(192, 190, 190);
     padding-top: 15px;
     background-color: white;
+    z-index: 1;
 
 }
 
@@ -194,7 +195,7 @@ h1 {
     top: 5.1rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 0px 4px 1px rgb(192, 190, 190);
-
+    z-index: 1;
     height: 8rem;
     width: 25rem;
 }

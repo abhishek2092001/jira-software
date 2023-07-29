@@ -1,10 +1,10 @@
 const express = require("express");
 
-require("./connection");
+require("./dbcomponents/connection");
 const cors = require("cors");
 const bodyParser = require("body-parser")
 
-const Pro = require("./Pr_Schema");
+const Pro = require("./dbcomponents/Pr_Schema");
 
 const app = express();
 
