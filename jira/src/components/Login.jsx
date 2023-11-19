@@ -24,11 +24,11 @@ import './navbar.css';
             resp.json().then((result)=>{
 
                 if(result.msg==="User Not found")
-                console.log(result.msg);  
+                alert(result.msg);  
                 // alert(result.msg);
                 else
                  { 
-                  alert("user login successfully1234556")  
+                  alert("user login successfully")  
               console.log("result",result.success);
               if(result.success)
               {

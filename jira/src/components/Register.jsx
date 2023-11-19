@@ -13,6 +13,10 @@ const Register = (props) => {
         try{
 
             let data={Name,email,password};
+            setEmail("");
+            setPass("");
+            setName("");
+
             // console.warn(data);
               fetch("http://localhost:8000/register", {
                 method: "POST",
@@ -40,6 +44,7 @@ const Register = (props) => {
             console.log(e);
 
         }
+        
 
     }
 
