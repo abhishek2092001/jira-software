@@ -8,7 +8,7 @@ import './navbar.css';
     const [password, setPass] = useState('');
     const navigate =useNavigate();
     const handleSubmit = (e) => {
-        e.preventDefault();
+        
         console.log(email);
        let data={email,password};
       const userdat=  fetch("http://localhost:8000/SignPageSchema",{
@@ -42,7 +42,7 @@ import './navbar.css';
             // alert("wrong details")
             console.log(e);
         })
-       
+        e.preventDefault();
 
     }
 

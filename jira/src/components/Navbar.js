@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./navbar.css"
 import Navcomponent from './Navcomponent';
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import { HiSquares2X2, HiMiniArrowRightOnRectangle } from "react-icons/hi2";
 import { IoHelpCircleSharp } from "react-icons/io5";
 
@@ -22,7 +22,7 @@ const Navbar = () => {
             }
           </li>
 
-          <li><button className='button-create' > <Link className='abutton' to="/Create2">Create</Link></button></li >
+          <li><button className='button-create' > <Link className='abutton' to="/navg/Create2">Create</Link></button></li >
 
 
         </ul>
@@ -35,6 +35,7 @@ const Navbar = () => {
         </ul>
 
       </nav>
+      <Outlet />
     </>
   )
 }

@@ -11,8 +11,8 @@ const Navcomponent = () => {
     <div>
       <ul className='cont'>
 
-        <li className='menu1 projects resp1'><Link className='a1' to="/Project">Projects</Link></li >
-        <li className='menu1 resp1'><Link className='a1' to="/Filters">Filters</Link></li >
+        <li className='menu1 projects resp1'><Link className='a1' to="/navg/Project">Projects</Link></li >
+        <li className='menu1 resp1'><Link className='a1' to="/navg/Filters">Filters</Link></li >
         <li className='menu1 resp1 a1' onClick={() => setdash((prev) => !prev)}>Dashboard<FiChevronDown /></li>
         {dash && <Createdash />}
         <li className='menu1 dropdown101 resp1 a1' onClick={() => setopen((prev) => !prev)}>Apps<FiChevronDown /></li>
