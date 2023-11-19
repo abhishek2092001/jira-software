@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://0.0.0.0:27017/Jira_pro").then(()=>{
+mongoose.connect("mongodb+srv://abhisheksaxenasep:PTE3qfZH5kxGXWTz@cluster0.unitonu.mongodb.net/").then(()=>{
     console.log("Database connection successfully")
 }).catch((e)=>{
-    console.log("No connection")
+    console.log("No connection",e)
 })
+//password=PTE3qfZH5kxGXWTz
